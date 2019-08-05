@@ -1,0 +1,68 @@
+{% extends "base.html" %}
+{% block content1 %}
+
+<table class="table">
+<thead>
+    <tr>
+    <th>Location</th>
+    <th></th>
+    <th></th>
+    </tr>
+</thead>
+<tbody>
+    <tr class="table-secondary">
+    <td>Country</td>
+    <td>{{country}}</td>
+    <td></td>
+    </tr>
+    <tr class="table-secondary">
+    <td>Continent</td>
+    <td>{{continent}}</td>
+    <td></td>
+    </tr>
+    <tr class="table-secondary">
+    <td>Coordinates</td>
+    <td>{{coordinates}}</td>
+    <td></td>
+    </tr>
+    <tr class="table-secondary">
+    <td>Time</td>
+    <td>{{time}}</td>
+    <td></td>
+    </tr>
+</tbody>
+</table>
+<br>
+<table class="table">
+<thead>
+    <tr>
+    <th>Network</th>
+    <th></th>
+    <th></th>
+    </tr>
+</thead>
+<tbody>
+    <tr class="table-secondary">
+    <td>IP address</td>
+    <td>{{ipaddress}}</td>
+    <td></td>
+    </tr>      
+    <tr class="table-secondary">
+    <td>Hostname</td>
+    <td>{{hostname}}</td>
+    <td></td>
+    </tr>
+    <tr class="table-secondary">
+    <td>Provider</td>
+    <td>{{provider}}</td>
+    <td></td>
+    </tr>
+    <tr class="table-secondary">
+    <td>ASN</td>
+    <td>{{asn}}</td>
+    <td></td>
+    </tr>
+</tbody>
+</table>
+
+{% endblock %}

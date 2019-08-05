@@ -1,0 +1,23 @@
+body{
+    background-color: silver;
+    font-family: 'Aldrich', sans-serif;
+}
+
+h6{
+    color: floralwhite;
+}
+
+.css_jumboColor{
+    background-color: darkgray;
+}
+
+.css_btnStyle{
+    color: white;
+    background-color: #9ece04;
+    border-style: double;
+    border-color: black;
+}
+
+.cssDivCenter{
+    text-align: center;
+}

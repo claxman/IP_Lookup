@@ -1,0 +1,13 @@
+{% extends "base.html" %}
+{% block content %}
+
+<h4><p style="color:brown">Your IP address: {{ip_add}}</p></h4>
+<form action="{{url_for('result')}}">
+    <div class="form-group mx-sm-3 mb-2">
+      <label for="ip"></label>
+      <input type="text" class="form-control" name="ip" placeholder="e.g. {{ip_add}} or example.com" required>
+    </div>
+    <button type="submit" class="btn css_btnStyle">Find Details</button>
+</form>
+
+{% endblock %}
