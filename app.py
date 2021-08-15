@@ -15,10 +15,11 @@ def index():
 @app.route("/result")
 def result():
     ip = request.args.get("ip")
-
+    user_agent = "keycdn-tools:"+ip
     proxyDict = {"http": "http://111.233.225.166:1234"}
+    headers = {"User-Agent": "user_agent"}
     url = "https://tools.keycdn.com/geo.json?host="+ip
-    data = r.get(url, proxies=proxyDict)
+    data = r.get(url, headers=headers, proxies=proxyDict)
     # data = r.get(url)
     
     city = data.json()["data"]["geo"]["city"]
